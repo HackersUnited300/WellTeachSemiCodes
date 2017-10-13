@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/peersTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="0 connected"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/framesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/peersTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="0 frames"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/sendFramesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/framesTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Send frames" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sendFramesButton"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_start_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Class" />
+
+        <Button
+            android:id="@+id/btn_previous_module"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Previous Slide" />
+
+        <Button
+            android:id="@+id/btn_next_module"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next module" />
+
+        <Button
+            android:id="@+id/btn_back_lesson_slide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back" />
+
+        <Button
+            android:id="@+id/btn_next_lesson_slide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next" />
+
+    </LinearLayout>
+
+</RelativeLayout>
